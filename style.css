@@ -1,0 +1,1114 @@
+:root {
+  --primary-dark:#E7CBEF;
+  --primary-mid: #FFC9CB;
+  --primary-light: #BAE8D4;
+  --secondary-dark:#43234C;
+  --secondary-light:#7F454F;
+  --text-dark:#00211A;
+  --text-light:#183630;
+
+  /* Fonts */
+  --h1-font-weight: bold;
+  --h1-font-size: 64px;
+  --h1-line-height: 76.8px;
+  --h2-font-weight: bold;
+  --h2-font-size: 40px;
+  --h2-line-height: 52px;
+  --h3-font-weight: bold;
+  --h3-font-size: 25px;
+  --h3-line-height: 35px;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Inria Serif', serif;
+ }
+
+body{
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  text-transform: capitalize;
+  color: var(--text-dark);
+}
+
+p{
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+.small-text{
+  color: var(--text-light);
+  font-size: 12px;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Icon */
+i{
+  font-size: 24px;    
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section{
+  padding: 50px 0px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+} 
+
+/* NAVIGATION */
+.nav-bar {
+    padding: 16px 100px 16px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+/* About-us and Cake */
+.frame-5 {                                 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 275px;
+  position: relative;
+}
+.nav-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Keep the text color the same */
+  display: flex; /* Ensure the full area is clickable */
+  align-items: center;
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* text and drop down */
+.frame-2, .frame-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 96px;
+  height: 24px;
+  position: relative;
+  white-space: nowrap;
+  color: var(--text-light);
+}
+
+.fa-solid fa-angle-down {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  color: var(--text-light);
+}
+
+/* logo */
+.kk-bakery {
+  flex-shrink: 0;
+  width: 133px;
+  height: 35px;
+  position: relative;
+}
+.kk-bakery2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  color: var(--secondary-light);
+  text-align: left;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 700;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+
+/* buttons and icon */
+.frame-7 {
+  display: flex;
+  flex-direction: row;
+  gap: 74px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 332px;
+  height: 44px;
+  position: relative;
+}
+.pudding-button-1 {
+  background: var(--primary-dark);
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 44px;
+  position: relative;
+}
+.pudding-button-2 {
+  color:var(--secondary-dark);
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+}
+
+.pudding-button-1:hover{
+  background: var(--secondary-dark);
+  cursor: pointer;
+}
+
+.pudding-button-2:hover{
+  color: var(--primary-dark);
+}
+
+.nav-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 108px;
+  position: relative;
+  color: var(--text-light);
+}
+.fa-solid fa-magnifying-glass {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.fa-regular fa-user{
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.user-icon:hover{
+color: inherit;
+cursor: pointer;
+}
+
+/* HERO PAGE */
+.hero-section {
+  padding: 72px 100px 72px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.frame-10 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  width: 440px;
+  height: 402px;
+  position: relative;
+}
+.frame-9 {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.main-text {
+  color: var(--text-dark);
+  text-align: left;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  font-weight:var(--h1-font-weight);
+  position: relative;
+  align-self: stretch;
+  height: 155px;
+  margin-bottom: 50px;
+}
+.sub-text{
+  color: var(--text-light);
+  text-align: left;
+  position: relative;
+  width: 230px;
+}
+.button {
+  background:var(--secondary-light);
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.button2 {
+  color: var(--primary-mid);
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+}
+
+/* PRODUCTS SECTION */
+.frame-19 {
+  padding: 72px 100px 72px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+  justify-content: center;
+  height: 633px;
+  position: relative;
+}
+
+.our-products {
+  color: var(--text-heading, #00211a);
+  text-align: center;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: var(--h2-font-weight);
+  position: relative;
+  align-self: stretch;
+}
+.Product-sub {
+  color: var(--text-body, #183630);
+  text-align: center;
+  position: relative;
+  align-self: stretch;
+}
+
+/* all cake products */
+
+.frame-18 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1241px;
+  height: 364px;
+  position: relative;
+
+  gap: 10px;
+  margin: 0 auto;
+
+  padding: 0;
+  
+
+  .image {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 313px;
+    position: relative;
+    object-fit: cover;
+  }
+}
+
+.cupcakes, .brownie, .cakes, .icecreams {
+  color: var(--text-dark);
+  text-align: left;
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  font-weight: var(--h3-font-weight);
+  position: relative;
+  align-self: stretch;
+}
+
+.frame-14, .frame-15, .frame-16, .frame-17 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 296px;
+  position: relative;
+}
+
+/* TREATS SECTION */
+.treats-sec {
+  background: var(--primary-dark);
+  padding: 72px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+
+  width: 100%;
+}
+.frame-21 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 589px;
+  position: relative;
+}
+.treats-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.treats-main {
+  color: var(--text-dark);
+  text-align: center;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: var(--h2-font-weight);
+  position: relative;
+  align-self: stretch;
+}
+.treats-sub {
+  color: var(--text-light);
+  text-align: left;
+  position: relative;
+  align-self: stretch;
+}
+.button {
+  background: var(--primary-dark);
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 44px;
+  position: relative;
+}
+.button2 {
+  color: var(--secondary-dark);
+  text-align: left;
+  font-size: var(--body-normal-font-size, 16px);
+  line-height: var(--body-normal-line-height, 24px);
+  font-weight: var(--body-normal-font-weight, 400);
+  position: relative;
+}
+.frame-18 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+
+  .image {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 313px;
+    position: relative;
+    object-fit: cover;
+  }
+}
+
+.bestsellers, .birthdays, .gifts-under-rs-100, .house-special {
+  color: var(--text-dark);
+  text-align: left;
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  font-weight: var(--h3-font-weight);
+  position: relative;
+  align-self: stretch;
+}
+
+/* DELIVERY SECTION*/
+.delivery {
+  padding: 72px 100px 72px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.delivery-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 726px;
+  position: relative;
+}
+.delivery-main {
+  color: var(--text-dark);
+  text-align: center;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: var(--h2-font-weight);
+  position: relative;
+  align-self: stretch;
+}
+.delivery-sub {
+  color: var(--text-light);
+  text-align: center;
+  position: relative;
+  align-self: stretch;
+  height: 84px;
+}
+.delivery-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  position: relative;
+  
+
+  .image {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 299px;
+    position: relative;
+    object-fit: cover;
+  }
+}
+.frame-24,.frame-25, .frame-26{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 400px;
+  position: relative;
+}
+
+.nationwide-shipping, .local-pickup, .catering-and-events {
+  color: var(--text-light);
+  text-align: center;
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  font-weight: var(--h3-font-weight);
+  position: relative;
+  align-self: stretch;
+}
+
+/* CATERING AND EVENTS */
+.catering {
+  background: var(--primary-mid);
+  padding: 72px 100px 72px 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 520px;
+  position: relative;
+}
+.frame-30 {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 483px;
+  position: relative;
+}
+.catering-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.catering-main {
+  color: var(--secondary-dark);
+  text-align: center;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: var(--h2-font-weight);
+  position: relative;
+  width: 372px;
+}
+.catering-sub{
+  color: var(--secondary-light);
+  text-align: center;
+  position: relative;
+  align-self: stretch;
+}
+.button {
+  background: var(--secondary-light);
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.button2 {
+  color: var(--primary-mid);
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+}
+.catering-img {
+  flex-shrink: 0;
+  width: 431px;
+  height: 520px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* FOOTER*/
+.footer {
+  background: var(--primary-light);
+  padding: 72px 100px 72px 100px;
+  display: flex;
+  flex-direction: row;
+  row-gap: 72px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 515px;
+  position: relative;
+}
+.frame-34 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 138px;
+  position: relative;
+}
+.kk-bakery {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 35px;
+  position: relative;
+}
+.kk-bakery2 {
+  color: var(--secondary-light, #7f454f);
+  text-align: left;
+  font-family: var(--heading-3-font-family, "InriaSerif-Bold", sans-serif);
+  font-size: var(--heading-3-font-size, 25px);
+  line-height: var(--heading-3-line-height, 35px);
+  font-weight: var(--heading-3-font-weight, 700);
+  position: absolute;
+  right: 3.62%;
+  left: 0%;
+  width: 96.38%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.first-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 109px;
+  height: 166px;
+  position: relative;
+}
+
+.careers, .press, .gift-cards, .subscription, .giving-back {
+  text-align: left;
+  position: relative;
+  align-self: stretch;
+}
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 183px;
+  position: relative;
+}
+.help-center, .refunds-and-returns, .promotion-terms, .wholesale, .newsroom {
+  text-align: left;
+  position: relative;
+  align-self: stretch;
+}
+
+.third-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 266px;
+  position: relative;
+}
+.third-column-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.have-a-question, .we-re-always-here-to-lend-a-helping-hand, .consumer-care-team-hours-are-monday-friday-9-am-5-pm-est {
+  text-align: left;
+  position: relative;
+  align-self: stretch;
+}
+
+.frame-38 {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 176px;
+  position: relative;
+}
+.contact-us {
+  color: var(--text-dark);
+  text-align: left;
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  font-weight: var(--h3-font-weight);
+  position: relative;
+  align-self: stretch;
+}
+
+.footer-icons{
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-direction:  row;
+}
+
+.frame-40 {
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1424px;
+  position: relative;
+}
+.do-not-sell-my-information, .privacy-policies, .terms-of-services {
+  text-align: left;
+  position: relative;
+}
+
+
+/* media query */
+@media (max-width: 400px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* nav bar */
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 5px 30px; 
+    position: relative;
+    width: 100%;
+}
+
+.kk-bakery {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 25px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    align-items: center;
+    padding-right: 85px;
+}
+.frame-5,
+.pudding-button-1 {
+    display: none;
+}
+
+.frame-7{
+  gap: 41px
+}
+
+  /* Hero Section */
+  .hero-section {
+      padding: 30px 15px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+      text-align: center;
+  }
+  
+  .frame-10 {
+      width: 100%;
+      gap: 15px; 
+      align-items: flex-start;
+      justify-content: center;
+  }
+
+  .frame-9{
+    gap: 16px;
+  }
+ 
+  .main-text {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: left;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+  .sub-text {
+    font-size: 30px;
+    width: 100%;
+    max-width: 164px;
+    text-align: left;
+}
+  .button {
+    align-self: flex-start; 
+    width: 128px; 
+    padding: 8px 15px; 
+    font-size: 14px; 
+}
+  
+
+/* product section */
+.frame-19 {
+  padding: 30px 15px;
+  gap: 24px;
+  height: auto; 
+}
+
+.frame-18 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two products per row */
+  gap: 12px;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.frame-14, .frame-15, .frame-16, .frame-17 {
+  width: 100%;
+  max-width: 160px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  max-height: 170px ;
+  object-fit: cover;
+}
+
+.our-products, .Product-sub {
+  font-size: 32px
+}
+
+.cupcakes, .brownie, .cakes, .icecreams {
+  font-size: 17px;
+}
+
+/* treats */
+.treats-sec {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.frame-21 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.treats-texts {
+  max-width: 90%;
+}
+
+.treats-main{
+  font-size: 32px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+ max-width: 200px;
+}
+
+.frame-21, .button{
+  align-self: center;
+}
+
+.frame-18 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two items per row */
+  gap: 12px;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.frame-14, .frame-15, .frame-16, .frame-17 {
+  width: 100%;
+  max-width: 160px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.image {
+  width: 100%;
+  max-height: 140px !important; 
+  object-fit: cover;
+}
+
+.bestsellers, .birthdays, .gifts-under-rs-100, .house-special {
+  font-size: 17px;
+  text-align: left;
+}
+
+
+/* delivery */
+.delivery {
+  padding: 40px 20px;
+  gap: 12px;
+}
+
+.delivery-texts {
+  width: 100%; 
+  text-align: center;
+}
+
+.delivery-main {
+  font-size: 32px;
+  line-height: normal;
+}
+
+.delivery-sub {
+  height: auto; 
+  font-size: 14px; 
+}
+
+.container{
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.frame-24,
+.frame-25,
+.frame-26 {
+  width: 100%;
+  max-width: 350px; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery .image {
+  height: 230px !important; 
+    max-height: 240px !important; 
+    width: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+
+.nationwide-shipping, 
+.local-pickup, 
+.catering-and-events {
+  font-size: 18px;
+}
+
+.catering {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 758px;
+}
+
+.frame-30 {
+  width: 100%;
+  max-width: 350px; 
+  gap: 16px;
+}
+
+.catering-texts {
+  width: 100%;
+  padding: 10px;
+}
+
+.catering-main {
+  font-size: 32px; 
+}
+
+.catering-sub p {
+  font-size: 14px; 
+  line-height: 1.5;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.button2 {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+}
+
+.catering-img {
+  width: 100%;
+  height: 413px;
+  background-position: center;
+  background-size: cover;
+  top: 16px;
+}
+
+
+/* footer */
+.footer {
+  padding: 15px;
+  height: 705px;
+  top: 424px;
+  top: 0px;
+}
+
+.first-column{
+  top: 56px;
+}
+.second-column{
+  top: 58px;
+}
+
+.third-column{
+  top: 56px;
+}
+.frame-38{
+  gap: 0px;
+}
+
+.kk-bakery {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.footer-icons {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.footer-text p {
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.contact-us {
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+}
